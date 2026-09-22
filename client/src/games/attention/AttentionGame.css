@@ -535,6 +535,50 @@
   -webkit-user-drag: none;
 }
 
+/* Fix puzzle image pieces */
+.puzzle-piece {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .puzzle-piece img {
+  position: absolute;
+  width: calc(var(--cols) * 100%);
+  height: calc(var(--rows) * 100%);
+  max-width: none;
+  object-fit: fill;
+
+  left: calc(var(--correct-col) * -100%);
+  top: calc(var(--correct-row) * -100%);
+} */
+
+/* =========================================================
+   PUZZLE IMAGE PIECE FIX
+   ========================================================= */
+
+.puzzle-piece {
+  position: relative;
+  overflow: hidden;
+}
+
+.puzzle-piece img {
+  position: absolute;
+
+  width: calc(var(--cols) * 100%);
+  height: calc(var(--rows) * 100%);
+
+  max-width: none;
+  max-height: none;
+
+  left: calc(var(--correct-col) * -100%);
+  top: calc(var(--correct-row) * -100%);
+
+  object-fit: fill;
+  display: block;
+  pointer-events: none;
+}
+
+
 /* =====================================================
    SELECTED PIECE
 ===================================================== */

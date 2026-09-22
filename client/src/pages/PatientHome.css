@@ -2611,7 +2611,12 @@ button {
 .language-menu {
   min-width: 245px;
   padding: 10px;
-  z-index: 1000;
+  z-index: 9999;
+}
+
+.language-menu {
+  position: absolute;
+  z-index: 100000;
 }
 
 .language-menu-header {
@@ -2788,5 +2793,59 @@ button {
 
   .home-voice-help .voice-help-button {
     min-width: 92px;
+  }
+}
+
+
+
+
+
+/* Language dropdown should stay above all page content */
+.language-menu {
+  position: absolute;
+  z-index: 100000 !important;
+
+  background: #fffdf8 !important;
+  border: 1px solid rgba(74, 113, 101, 0.14);
+  border-radius: 18px;
+
+  box-shadow: 0 12px 35px rgba(39, 65, 57, 0.14);
+
+  overflow: hidden;
+  backdrop-filter: none;
+}
+
+
+.language-options {
+  background: #fffdf8;
+}
+
+.language-options button {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.language-options button:hover {
+  background: #f1f6f1;
+}
+
+.floating-menu.language-menu {
+  z-index: 9999 !important;
+}
+
+
+
+@media (max-width: 600px) {
+  .mobile-art-card {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .patient-home-page {
+    background-image: none !important;
+    background: #f9e2d2 !important;
   }
 }

@@ -681,14 +681,21 @@ function AttentionGame() {
                   >
                     {image && (
                       <img
-                        src={image}
-                        alt=""
-                        draggable={false}
-                        style={{
-                          "--correct-col": piece.correctCol,
-                          "--correct-row": piece.correctRow,
-                        }}
-                      />
+  src={image}
+  alt=""
+  draggable={false}
+  style={{
+    position: "absolute",
+    width: `${config.cols * 100}%`,
+    height: `${config.rows * 100}%`,
+    left: `${piece.correctCol * -100}%`,
+    top: `${piece.correctRow * -100}%`,
+    maxWidth: "none",
+    maxHeight: "none",
+    objectFit: "fill",
+    pointerEvents: "none",
+  }}
+/>
                     )}
                   </div>
                 ))}

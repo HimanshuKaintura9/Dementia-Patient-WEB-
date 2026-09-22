@@ -501,7 +501,7 @@ export default function Home() {
 
             {/* MOBILE ART */}
 
-            <section
+            {/* <section
               className="mobile-art-card"
               aria-label="Inspired by the quiet beauty of Northeast India"
             >
@@ -517,7 +517,7 @@ export default function Home() {
               ))}
 
               <p>Inspired by the quiet beauty of Northeast India</p>
-            </section>
+            </section> */}
           </div>
         </section>
 

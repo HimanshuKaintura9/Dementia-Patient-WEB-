@@ -57,4 +57,11 @@
   .language-icon {
     font-size: 18px;
   }
+
+
+  .language-selector {
+  position: relative;
+  z-index: 99999 !important;
 }
+}
+
